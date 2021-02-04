@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+       <style>
+          
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            span{
+                width:10%;
+                background:rgb(188, 211, 20);
+                height:15px;
+                margin-top:3%;
+                color:white;
+                border-radius: 10px ;
+            }
+
+            .none{
+                display: none;
+            }
+
+            .flex{
+                display: flex
+            }
+
+            #rotateTop{
+                position: relative;
+                top: 47px;     
+            }
+
+            @keyframes translateTop{
+
+
+                from{
+                    transform: translateY(0);
+                }
+
+                to{
+                    transform: translateY(45px);
+                }
+            }
+
+            @keyframes translateBottom{
+
+
+                from{
+                    transform: translateY(0);
+                }
+
+                to{
+                    transform: translateY(-45px);
+                }
+            }
+
+
+            @keyframes translateTopclose{
+
+
+                from{
+                    transform: translateY(45px);
+                }
+
+                to{
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes translateBottomclose{
+
+
+                from{
+                    transform: translateY(-45px);
+                }
+
+                to{
+                    transform: translateY(0);
+                }
+            }
+
+
+
+            @keyframes rotateTop {
+
+                from{
+                    transform: rotate(0);
+                }
+                
+                to{
+                    transform: rotate(-135deg);
+                }
+            }
+
+            @keyframes rotateBottom {
+
+                from{
+                    transform: rotate(0);
+                }
+
+                to{
+                    transform: rotate(-45deg);
+                }
+            }
+
+            @keyframes rotateTopclose {
+
+                from{
+                    
+                    transform: rotate(45deg);
+                }
+
+                to{
+                    transform: rotate(0);
+                }
+            }
+
+            @keyframes rotateBottomclose {
+
+                from{
+                    transform: rotate(-45deg);
+                }
+
+                to{
+                    
+                    transform: rotate(0);
+                }
+            }
+/* 
+            @keyframes rotaburger{
+
+            }
+
+
+            .textesousburger{
+                background:black;
+                font-size: 3rem;
+
+            } */
+       </style>
+    <body>
+        
+        <div class="open">
+            <span id="closeTop"></span>
+            <span id="closeMiddle"></span>
+            <span id="closeBottom"></span>
+        </div>
+
+
+        <div class="close none">
+            <span id="rotateTop"></span>
+            <span id="rotateBottom"></span>
+
+        </div>
+<!-- 
+        <div class="textesousburger">
+            <h1>ROTA-MENU</h1>
+        </div> -->
+        
+        <script src="app.js"></script>
+
+
+    <div class="container">
+        <div class="textsacceuil none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sunt eum quam quas, repellendus nisi, esse perspiciatis consequatur vero repudiandae debitis maxime aspernatur, ducimus impedit blanditiis fugiat. Voluptatum, quod maiores.
+                                Harum sed libero ipsum, eius sit modi obcaecati porro! Qui vel cum nostrum veniam. Officia, quis corporis voluptates maxime qui et totam eveniet sunt dolor placeat velit voluptas omnis dicta.
+                                Molestias doloremque facere eos possimus fugit eum, quas dolorum odit sit impedit voluptatibus ex consequatur ab. Ipsa aut quibusdam enim dolore aspernatur ad deserunt corporis voluptas accusamus? Excepturi, voluptatum aliquid!
+        </div>
+
+
+        <div class="textdescritpion none">
+
+        </div>
+       
+    </div>
+
+
+    </body>
+</html>
