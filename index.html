@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+        </style>
+
+       <style>
+          body{
+              background-color: black;
+          }
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .textesousburger{
+                border: rgb(255, 255, 255) 2px solid;
+                border-radius: 50px 50px;
+                margin: 100px;
+            }
+            span{
+                width:10%;
+                background:rgb(255, 255, 255);
+                height:15px;
+                margin-top:3%;
+                border-radius: 10px ;
+            }
+            h1{
+                color: white;
+                font-family:'Lexend Mega', sans-serif;
+                letter-spacing: 5vw;
+                font-size: 2rem;
+            }
+            p{
+                color: white;
+                font-family:'Lexend Mega', sans-serif ;
+                text-align: center;
+                line-height: 50px;
+            }
+
+            .none{
+                display: none;
+            }
+
+            .flex{
+                display: flex
+            }
+
+            #rotateTop{
+                position: relative;
+                top:60px;     
+            }
+
+            @keyframes translateTop{
+
+
+                from{
+                    transform: translateY(0);
+                }
+
+                to{
+                    transform: translateY(45px);
+                }
+            }
+
+            @keyframes translateBottom{
+
+
+                from{
+                    transform: translateY(0);
+                }
+
+                to{
+                    transform: translateY(-45px);
+                }
+            }
+
+
+            @keyframes translateTopclose{
+
+
+                from{
+                    transform: translateY(45px);
+                }
+
+                to{
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes translateBottomclose{
+
+
+                from{
+                    transform: translateY(-45px);
+                }
+
+                to{
+                    transform: translateY(0);
+                }
+            }
+
+
+
+            @keyframes rotateTop {
+
+                from{
+                    transform: rotate(0);
+                }
+                
+                to{
+                    transform: rotate(-135deg);
+                }
+            }
+
+            @keyframes rotateBottom {
+
+                from{
+                    transform: rotate(0);
+                }
+
+                to{
+                    transform: rotate(-45deg);
+                }
+            }
+
+            @keyframes rotateTopclose {
+
+                from{
+                    
+                    transform: rotate(45deg);
+                }
+
+                to{
+                    transform: rotate(0);
+                }
+            }
+
+            @keyframes rotateBottomclose {
+
+                from{
+                    transform: rotate(-45deg);
+                }
+
+                to{
+                    
+                    transform: rotate(0);
+                }
+            }
+
+       </style>
+    <body>
+        
+        <div class="open">
+            <span id="closeTop"></span>
+            <span id="closeMiddle"></span>
+            <span id="closeBottom"></span>
+        </div>
+
+
+        <div class="close none">
+            <span id="rotateTop"></span>
+            <span id="rotateBottom"></span>
+
+        </div>
+
+        <div class="textesousburger">
+            <h1>ROTA-MENU</h1>
+            <p>Clic sur le Burger</p>
+        </div> 
+
+<header>
+    <p>Lenny Vazeille | <strong>ROTAVELE</strong> <br>Etudiant Developpeur Web &amp; Web Mobile - Contact: lenny.m.vazeille@gmail.com</p>
+</header>
+        <script src="app.js"></script>
+    </body>
+</html>
